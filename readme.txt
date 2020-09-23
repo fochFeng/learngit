@@ -9,7 +9,14 @@ git log --pretty==oneline  reflog[用来记录你的每一次提交命令]
 git reset命令即可以回退版本，也可以把暂存区的修改回退到工作区。
 
 要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
-关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；git push --set-upstream origin dev
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
 cat file 查看文件内容
+
+
+git 分支管理
+git branch / git checkout -b dev == git branch dev + git checkout dev / git branch -a
+修改分支名：
+git branch -m oldBranchName newBranchName [本地分支重命名]
+1、git branch -m oldBranchName newBranchName 2、git push --delete origin oldBranchName 3、git push -u origin newBranchName  [远程分支重命名 先修改本地然后删除远程老分支最后上传新的重命名的分支]
