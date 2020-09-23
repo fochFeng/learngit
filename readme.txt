@@ -1,5 +1,5 @@
 好好学习，天天向上。
-git init / clone / add ./ commit -m "" / status / diff / stash
+git init / clone / add ./ commit -m "" / status / diff / stash /reset / merge
 git log --pretty==oneline  reflog[用来记录你的每一次提交命令]
 
 回退
@@ -16,7 +16,12 @@ cat file 查看文件内容
 
 
 git 分支管理
-git branch / git checkout -b dev == git branch dev + git checkout dev / git branch -a
+git branch / git checkout -b dev == git branch dev + git checkout dev / git branch -a / git branch -d branchName
 修改分支名：
 git branch -m oldBranchName newBranchName [本地分支重命名]
 1、git branch -m oldBranchName newBranchName 2、git push --delete origin oldBranchName 3、git push -u origin newBranchName  [远程分支重命名 先修改本地然后删除远程老分支最后上传新的重命名的分支]
+
+
+合并 merge / rebase
+git merge命令用于合并指定分支到当前分支。
+解决冲突
