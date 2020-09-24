@@ -26,3 +26,5 @@ git branch -m oldBranchName newBranchName [本地分支重命名]
 合并 merge / rebase
 git merge命令用于合并指定分支到当前分支。
 Git用<<<<<<<，=======，>>>>>>>标记出不同分支的内容
+
+bug issus-101
