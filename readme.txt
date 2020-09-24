@@ -34,3 +34,5 @@ bug issus-101
 git stash save   list apply pop   stash@{num}
 cherry-pick命令，让我们能复制一个特定的提交到当前分支
 >>>>>>> Stashed changes
+
+git rebase
