@@ -27,12 +27,15 @@ git branch -m oldBranchName newBranchName [本地分支重命名]
 git merge命令用于合并指定分支到当前分支。
 Git用<<<<<<<，=======，>>>>>>>标记出不同分支的内容
 
-<<<<<<< Updated upstream
-bug issus-101
-=======
-
 git stash save   list apply pop   stash@{num}
 cherry-pick命令，让我们能复制一个特定的提交到当前分支
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 
 git rebase
+
+
+git push / pull
+ git push origin master 就是把master分支上的所有本地提交推送到远程库
+ git checkout -b dev origin/dev
+ 如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to <branch-name> origin/<branch-name>。
