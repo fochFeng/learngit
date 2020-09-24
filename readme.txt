@@ -13,3 +13,6 @@ git reset命令即可以回退版本，也可以把暂存区的修改回退到�
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
 cat file 查看文件内容
+
+
+git rebase学习
